@@ -18,5 +18,6 @@ for archivos in ruta_completa :
     ruta_origen = os.path.join(directorioRaiz,archivos)
     ruta_salida = os.path.join(directorioFinal,archivos)
     img= Image.open(ruta_origen)
-    img_resized = img.resize((208,123))
-    img_resized.save(ruta_salida)
+    img_resized = img.resize((500 , 300), Image.LANCZOS)
+    img_resized.save(ruta_salida, quality=100,optimize=True)
+   
