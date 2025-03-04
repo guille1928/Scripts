@@ -12,7 +12,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
+
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -50,8 +50,11 @@ def enviarEmail (precio):
         print(f"No se pudo enviar el correo: {e}")
 
 # Configurar las opciones de Selenium para usar Brave
+# para esto utilice en el nas que se viera la ventana grafica con el TigerVNC,, me conecto con la ip del nas.. y el puerto abierto del docker.. y 
+#contrasenia de siempre sin numeros... 
 
 options = Options()
+#quitaria estas 3 lineras para ver el entorno grafico 
 options.add_argument("--headless")  # Sin interfaz gráfica
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
