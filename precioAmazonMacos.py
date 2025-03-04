@@ -51,7 +51,8 @@ def enviarEmail (precio):
 
 # Configurar las opciones de Selenium para usar Brave en el propio pc
 options = Options()
-options.binary_location = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"  # Usa r para evitar problemas con las barras invertidas
+options.binary_location = "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+
 options.add_argument("--headless")  # Sin interfaz gráfica
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
