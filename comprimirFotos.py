@@ -1,5 +1,5 @@
 #para comprimir unas imagenes en macos, vienen en formato jpg normalmente, y meter en otra carpeta redimensionandolas
-#ruta para el macos   /usr/bin/python3 /Users/guille/Documents/GitHub/SaberPrecioAmazon/comprimirFotos.py
+#ruta para el macos   /usr/bin/python3 /Users/... tu ruta del script
 
 import os
 from PIL import Image
