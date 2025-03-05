@@ -38,6 +38,7 @@ for archivos in ruta_completa :
     print("las fotos son : ",archivos)
     ruta_origen = os.path.join(directorioRaiz,archivos)
     ruta_salida = os.path.join(directorioFinal,archivos)
+    ruta_salida = os.path.splitext(ruta_salida)[0] + ".png"
     img= Image.open(ruta_origen)
     img_redimensionada= redimensionar_relacion(img,264,414)
     img_redimensionada.save(ruta_salida, format="PNG")
