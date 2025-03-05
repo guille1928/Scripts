@@ -1,5 +1,5 @@
 #para comprimir unas imagenes en macos, vienen en formato jpg normalmente, y meter en otra carpeta redimensionandolas
-
+#ruta para el macos   /usr/bin/python3 /Users/guille/Documents/GitHub/SaberPrecioAmazon/comprimirFotos.py
 
 import os
 from PIL import Image
@@ -35,11 +35,12 @@ def redimensionar_relacion (imagen, alto, ancho) :
     return nueva_imagen
 
 for archivos in ruta_completa :
-    print("las fotos son : ",archivos)
-    ruta_origen = os.path.join(directorioRaiz,archivos)
-    ruta_salida = os.path.join(directorioFinal,archivos)
-    ruta_salida = os.path.splitext(ruta_salida)[0] + ".png"
-    img= Image.open(ruta_origen)
-    img_redimensionada= redimensionar_relacion(img,264,414)
-    img_redimensionada.save(ruta_salida, format="PNG")
+    if archivos.lower().endswith(extension_foto):
+        print("las fotos son : ",archivos)
+        ruta_origen = os.path.join(directorioRaiz,archivos)
+        ruta_salida = os.path.join(directorioFinal,archivos)
+        ruta_salida = os.path.splitext(ruta_salida)[0] + ".png"
+        img= Image.open(ruta_origen)
+        img_redimensionada= redimensionar_relacion(img,264,414)
+        img_redimensionada.save(ruta_salida, format="PNG")
    
