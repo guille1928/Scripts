@@ -6,8 +6,8 @@ from PIL import Image
 
 #creo los 2 directorios para controlar la importacion de fotos
 
-directorioRaiz = "/Users/guille/Desktop/ScriptFotoClau/carpeta1"
-directorioFinal = "/Users/guille/Desktop/ScriptFotoClau/carpetaFinal"
+directorioRaiz = "/Users/guille/Desktop/ScriptFotoClau/carpeta1" #poner la ruta de tu carpeta en macos o windows
+directorioFinal = "/Users/guille/Desktop/ScriptFotoClau/carpetaFinal" #poner la ruta de tu carpeta en macos o windows
 
 ruta_completa = os.listdir(directorioRaiz)
 
