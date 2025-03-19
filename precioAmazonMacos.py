@@ -3,7 +3,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from selenium import webdriver
 
-#3 lineas puestas para buscar compatibilidad, me da probelasm por que en el nas no debo de usar brave o similares.. 
+#3 lineas puestas para buscar compatibilidad, me da problemas por que en el nas no debo de usar brave o similares.. 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
